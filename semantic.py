@@ -21,3 +21,5 @@ tokens = nlp("cat apple monkey banana")
 for token1 in tokens:
     for token2 in tokens:
         print(f"{token1} vs {token2} similarity = {token1.similarity(token2)}")
+
+#These 
