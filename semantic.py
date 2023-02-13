@@ -22,4 +22,8 @@ for token1 in tokens:
     for token2 in tokens:
         print(f"{token1} vs {token2} similarity = {token1.similarity(token2)}")
 
-#These 
+#These resuls make sense:
+#-Where the same token is compared the similarity is 1.0 they are the same
+#-The two animals score high when compared as do the two fruit
+#-The aimals and fruit score low when compared to each other
+#-The monkey has a higher score when comapered to the banana than the cat, monkeys are know to eat bananas so the words are assosiated
