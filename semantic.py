@@ -32,7 +32,7 @@ for token1 in tokens:
 print()
 
 #for my example the 4 words are set
-new_tokens = nlp("Glacier Lighthouse Flamingo Cornucopia")
+new_tokens = nlp("Glacier Lighthouse Flamingo Bear Skier Mountain Parrot Jungle")
 
 #I will use tabulate to display the results in a clearer manner
 from tabulate import tabulate
