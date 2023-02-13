@@ -27,3 +27,16 @@ for token1 in tokens:
 #-The two animals score high when compared as do the two fruit
 #-The aimals and fruit score low when compared to each other
 #-The monkey has a higher score when comapered to the banana than the cat, monkeys are know to eat bananas so the words are assosiated
+
+#Line break
+print()
+
+#for my example the 4 words are set
+new_tokens = nlp("Glacier Lighthouse Flamingo Cornucopia")
+
+#I will use tabulate to display the results in a clearer manner
+from tabulate import tabulate
+
+#list for table made using list comprehension
+similarity_table = [[str(token1)] + [str(token1.similarity(token2)) for token2 in new_tokens] for token1 in new_tokens]
+print(tabulate(similarity_table, headers= ["Word"] + [token_title for token_title in new_tokens], tablefmt="grid"))
